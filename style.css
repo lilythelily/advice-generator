@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-200: hsl(193, 38%, 86%);
+  --green-300: hsl(150, 100%, 66%);
+  --blue-600: hsl(217, 19%, 38%);
+  --blue-900: hsl(217, 19%, 24%);
+  --blue-950: hsl(218, 23%, 16%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.625rem;
+  background-color: var(--blue-950);
+  color: var(--blue-200);
+  font-weight: 800;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.advice {
+  color: var(--green-300);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2437rem;
+  font-weight: 600;
+}
+
+picture {
+  display: block;
+  margin: 1.5rem 0 0 0;
+}
+
+q {
+  width: 27.75rem;
+  height: 6.25rem;
+  text-align: center;
+}
+
+#dice {
+  background-image: url(./images/icon-dice.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--green-300);
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 3.75rem;
+  position: relative;
+  top: 2.5rem;
+  left: center;
+  cursor: pointer;
+}
+
+#dice:hover {
+  box-shadow: 0rem 0rem 1.875rem 0.625rem hsla(150, 100%, 66%, 0.5),
+    0rem 0rem 3.125rem 0.625rem hsla(150, 100%, 66%, 0.2),
+    0rem 0rem 6.25rem 1.25rem hsla(150, 100%, 66%, 0.2);
+  transition: all 0.2s ease-in;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
+  background-color: var(--blue-900);
+  border-radius: 1rem;
+  width: 33.75rem;
+  height: 25rem;
+  padding: 2.5rem 2.5rem 0 2.5rem;
+}
+
+footer {
+  margin: 5rem auto;
+  font-weight: 400;
+  color: var(--blue-600);
+}
+
+/* --- responsive --- */
+
+@media (max-width: 37.5rem) {
+  main {
+    width: 90vw;
+    padding: 2.5rem 1.5rem 0 1.5rem;
+  }
+  q {
+    width: 18.4375rem;
+    font-size: 1.25rem;
+  }
+}
